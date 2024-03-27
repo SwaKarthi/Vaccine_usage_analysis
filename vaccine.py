@@ -3,7 +3,6 @@ import streamlit as st
 import seaborn as sns
 import matplotlib.pyplot as plt
 from streamlit_option_menu import option_menu
-from PIL import Image
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, classification_report
@@ -35,21 +34,13 @@ with st.sidebar:
 if selected == "Home":
     st.markdown("# :red[Vaccine Usage analysis and Prediction]")
     st.markdown("## :red[A User-Friendly Tool Using Streamlit and Matplotlib]") 
-    col1,col2 = st.columns([2,2],gap="small")
-  
-    with col1:
-        st.write(" ")
-        st.write(" ")
-        st.write(" ")
-        st.markdown("### :green[Domain :] Data Analysis and Machine Learning")
-        st.markdown("### :green[Technologies used :] Python, Pandas, Streamlit and Matplotlib")
-        st.markdown("### :green[Overview :]  This streamlit app can be used to visualize the Vaccine Usage analysis. Bar charts, Pie charts are used to get insights.")
+    st.write(" ")
+    st.write(" ")
+    st.write(" ")
+    st.markdown("### :green[Domain :] Data Analysis and Machine Learning")
+    st.markdown("### :green[Technologies used :] Python, Pandas, Streamlit and Matplotlib")
+    st.markdown("### :green[Overview :]  This streamlit app can be used to visualize the Vaccine Usage analysis. Bar charts, Pie charts are used to get insights.")
 
-    with col2:
-        st.write(" ")
-        st.write(" ")
-        st.write(" ")
-        st.image(Image.open("C:\\Users\\krkar\\Downloads\\vaccine.jpg"), width=400)
 
 if selected == "Vaccine analysis":
     col1,col2 = st.columns([2,2],gap="large")
