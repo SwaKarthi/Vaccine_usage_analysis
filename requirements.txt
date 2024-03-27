@@ -3,7 +3,6 @@ streamlit
 seaborn
 matplotlib
 streamlit_option_menu
-PIL
 scikit-learn
 joblib
 gunicorn
